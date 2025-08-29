@@ -4,4 +4,5 @@ Original game was made with Java, but my version is made on JS and bases on XOCl
 
 # TODO
 - [x] All game logic (victory and ties)
+- [x] Victory sound
 - [ ] Improved skin system
