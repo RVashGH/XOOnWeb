@@ -1,0 +1,283 @@
+body {
+    height: 100vh;
+    background: linear-gradient(#9adfff, #6686ab);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid hsla(0, 0%, 20%, 0.3);
+    border-radius: 10px;
+    background: black;
+    box-shadow: 0 0 20px grey;
+    transition: .5s;
+    width: 450px;
+    align-self: center;
+}
+
+#logo-menu {
+    width: 200px;
+}
+
+#play-btn, #exit-btn {
+    width: 160px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#play-btn {
+    padding-bottom: 0;
+}
+
+#exit-btn {
+    padding-bottom: 50px;
+}
+
+#start-menu {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border: 2px solid hsla(0, 0%, 20%, 0.3);
+    border-radius: 10px;
+    background: black;
+    box-shadow: 0 0 20px grey;
+    transition: .5s;
+    width: 450px;
+    align-self: center;
+}
+
+#start-new-start, #skins-start {
+    height: 64px;
+    padding: 20px;
+    align-self: center;
+    cursor: pointer;
+}
+
+#start-new-start {
+    padding-bottom: 0;
+    padding-top: 100px;
+}
+
+#skins-start {
+    padding-bottom: 20px;
+}
+
+#back-start {
+    position: relative;
+    height: 48px;
+    padding-bottom: 20px;
+    align-self: flex-start;
+    padding-top: 50px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid hsla(0, 0%, 20%, 0.3);
+    border-radius: 10px;
+    background: black;
+    box-shadow: 0 0 20px grey;
+    transition: .5s;
+    width: 450px;
+    align-self: center;
+}
+
+.map {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    width: 300px;
+    padding-bottom: 75px;
+}
+
+#header {
+    text-align: start;
+    color: white;
+}
+
+.turn {
+    align-self: flex-start;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#turn-img {
+    width: 48px;
+    position: relative;
+    /* top: 5px; */
+    vertical-align: top;
+}
+
+#turn-sign {
+    height: 48px;
+}
+
+.cell {
+    border: 4px solid white;
+    height: 100px;
+    cursor: pointer;
+}
+
+#cell1 {
+    border-top: none;
+    border-left: none;
+}
+
+#cell2 {
+    border-top: none;
+}
+
+#cell3 {
+    border-top: none;
+    border-right: none;
+}
+
+#cell4 {
+    border-left: none;
+}
+
+#cell6 {
+    border-right: none;
+}
+
+#cell7 {
+    border-bottom: none;
+    border-left: none;
+}
+
+#cell8 {
+    border-bottom: none;
+}
+
+#cell9 {
+    border-bottom: none;
+    border-right: none;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+#cell-img {
+    width: 75px;
+}
+
+#victory-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 24px solid #01137f;
+    border-left: 16px solid #01137f;
+    border-right: 16px solid #01137f;
+    
+    /* border-radius: 10px; */
+    background: black;
+    /* box-shadow: 0 0 20px grey; */
+    transition: .5s;
+    align-self: center;
+    position: absolute;
+    width: 300px;
+}
+
+#win-img {
+    height: 90px;
+}
+
+#victory-sign {
+    height: 50px;
+}
+
+#xcoin-win {
+    height: 32px;
+    padding-right: 0;
+    position: relative;
+    right: -40px;
+}
+
+#reward-win {
+    height: 32px;
+    padding-left: 0;
+}
+
+#confirm-btn-win {
+    height: 64px;
+    padding: 16px;
+    cursor: pointer;
+    padding-top: 64px;
+}
+
+#skin-menu {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border: 2px solid hsla(0, 0%, 20%, 0.3);
+    border-radius: 10px;
+    background: black;
+    box-shadow: 0 0 20px grey;
+    transition: .5s;
+    width: 450px;
+    align-self: center;
+}
+
+#choose-skin-img {
+    height: 80px;
+    align-self: center;
+    padding-top: 30px;
+}
+
+#skin-collection {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 150px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 25px 10px;
+}
+
+.skin-item {
+    /* border: 4px solid white; */
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    padding: 0;
+    cursor: pointer;
+    border: 5px solid #757575;
+}
+
+#set-default-skin-img {
+    height: 50px;
+    align-self: center;
+    padding: 30px;
+    cursor: pointer;
+}
+
+#back-skins {
+    position: relative;
+    height: 48px;
+    padding-bottom: 20px;
+    align-self: flex-start;
+    padding-top: 50px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+#skin1 {
+    border: 5px solid #00ae00;
+}
+
+#skin3 {
+    border: 5px solid #00ae00;
+}

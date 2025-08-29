@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>XOOnWeb by @RVashGH</title>
+</head>
+<body>
+    <div id="main-menu">
+        <img src="logoclassic.png" alt="logo" id="logo-menu">
+        <img src="play.png" alt="logo" id="play-btn">
+        <img src="exit.png" alt="logo" id="exit-btn">
+        <!-- <p>в окно</p> -->
+    </div>
+
+    <div id="start-menu" style="display: none;">
+        <img src="start.png" alt="start a new game" id="start-new-start">
+        <img src="skins.png" alt="start a new game" id="skins-start">
+        <img src="back.png" alt="start a new game" id="back-start">
+    </div>
+
+    <div id="game" style="display: none;">
+        <div class="turn">
+            <img src="turn.png" alt="turn:" id="turn-sign">
+            <img src="x1.png" alt="x" id="turn-img">
+            
+        </div>
+        
+        <div class="map">
+            <div class="cell" id="cell1">
+                <p id="cell1p"></p>
+            </div>
+            <div class="cell" id="cell2">
+                <p id="cell2p"></p>
+            </div>
+            <div class="cell" id="cell3">
+                <p id="cell3p"></p>
+            </div>
+            <div class="cell" id="cell4">
+                <p id="cell4p"></p>
+            </div>
+            <div class="cell" id="cell5">
+                <p id="cell5p"></p>
+            </div>
+            <div class="cell" id="cell6">
+                <p id="cell6p"></p>
+            </div>
+            <div class="cell" id="cell7">
+                <p id="cell7p"></p>
+            </div>
+            <div class="cell" id="cell8">
+                <p id="cell8p"></p>
+            </div>
+            <div class="cell" id="cell9">
+                <p id="cell9p"></p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="victory-screen" style="display: none;">
+        <img src="x1.png" alt="x" id="win-img">
+        <img src="victory.png" alt="victory" id="victory-sign">
+        <!-- <div class="xcoin-score-win"> -->
+            <!-- <img src="xcoin.png" alt="xcoin" id="xcoin-win"> -->
+            <!-- <img src="reward1.png" alt="reward +1" id="reward-win"> -->
+            
+        <!-- </div> -->
+        
+        <img src="confirm.png" alt="confirm btn" id="confirm-btn-win">
+    </div>
+
+    <div id="skin-menu" style="display: none;">
+        <img src="skins-menu/chooseskin.png" alt="choose skin:" id="choose-skin-img">
+        <select name="" id="skin-select">
+            <option value="1">classic</option>
+            <option value="2">new</option>
+        </select>
+        <!-- <div id="skin-collection">
+            <img src="x1.png" alt="x classic" class="skin-item" id="skin1">
+            <img src="x2.png" alt="x classic" class="skin-item" id="skin2">
+            <img src="o1.png" alt="x classic" class="skin-item" id="skin3">
+            <img src="o2.png" alt="x classic" class="skin-item" id="skin4">
+
+        </div>
+        <img src="skins-menu/defaults.png" alt="reset to defaults" id="set-default-skin-img"> -->
+        <img src="back.png" alt="back" id="back-skins">
+    </div>
+    <audio id="win-sound">
+        <source src="win.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="index.js"></script>
+</body>
+</html>
